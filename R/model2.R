@@ -83,3 +83,8 @@ selection <- stability_selection(x, y, 0.2, 1000, idx_true)
 
 plot(selection)
 
+
+list.dirs()
+
+knitr::knit('README.Rmd')
+
