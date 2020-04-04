@@ -11,6 +11,7 @@ output: html_document
 
 ### 1. 시뮬레이션 데이터 세팅
 <br>  
+
 ##### n : 100, p : 1000 (high dimensional data)
 ##### 유의한 변수 갯수 : 50개 (block당 1개, sparsity solution)
 ##### block : 20개
@@ -20,13 +21,13 @@ output: html_document
 <br>  
 
 #### 1.1 block내 데이터 상관성
-<img src="figure/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="800px" height="500px" />
-<img src="figure/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" width="800px" height="500px" />
+<img src="figure/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="600px" height="500px" />
+<img src="figure/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" width="600px" height="500px" />
 <br>  
 <br>  
 
 #### 1.2 block간 데이터 상관성
-<img src="figure/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" width="800px" height="500px" />
+<img src="figure/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" width="600px" height="500px" />
 <br>  
 <br>  
 
@@ -96,4 +97,6 @@ summary(true_model)
 <br>  
 
 #### 2.2 stability selection
+<br>  
+
 ![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png)

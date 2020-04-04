@@ -62,6 +62,7 @@ y_generator <- function(
 
 ### 1. 시뮬레이션 데이터 세팅
 <br>  
+
 ##### n : 100, p : 1000 (high dimensional data)
 ##### 유의한 변수 갯수 : 50개 (block당 1개, sparsity solution)
 ##### block : 20개
@@ -71,7 +72,7 @@ y_generator <- function(
 <br>  
 
 #### 1.1 block내 데이터 상관성
-```{r, out.width='800px', out.height='500px', echo=FALSE}
+```{r, out.width='600px', out.height='500px', echo=FALSE}
 n <- 100
 p <- 1000
 block <- 20
@@ -91,14 +92,14 @@ rownames(cor2) <- colnames(cor2)
 
 corrplot::corrplot(cor1, title = 'within1(block1)', number.cex = 0.5, method = 'color', type = 'upper', tl.cex = .6, diag = F, mar=c(0,0,1.5,0))
 ```
-```{r, out.width='800px', out.height='500px', echo=FALSE}
+```{r, out.width='600px', out.height='500px', echo=FALSE}
 corrplot::corrplot(cor2, title = 'within2(block2)', number.cex = 0.5, method = 'color', type = 'upper', tl.cex = .6, diag = F, mar=c(0,0,1.5,0))
 ```
 <br>  
 <br>  
 
 #### 1.2 block간 데이터 상관성
-```{r, out.width='800px', out.height='500px', echo=FALSE}
+```{r, out.width='600px', out.height='500px', echo=FALSE}
 cor_b <- cor(x[, idx_true])
 colnames(cor_b) <- paste('v', idx_true, sep = '_')
 rownames(cor_b) <- colnames(cor_b)
@@ -156,6 +157,8 @@ title('lasso')
 <br>  
 
 #### 2.2 stability selection
+<br>  
+
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=5, fig.width=5}
 stability_selection <- function(x, y, alpha, n_iter = 100, idx_true) {
   n <- nrow(x)
