@@ -15,7 +15,7 @@ output: html_document
 ##### n : 100, p : 1000 (high dimensional data)
 ##### 유의한 변수 갯수 : 50개 (block당 1개, sparsity solution)
 ##### block : 20개
-##### multicollinearity : 약 0.9 (각 block내에서)
+##### multicollinearity : 약 0.8 (각 block내에서)
 ##### high noise, high multicollinearity
 <br>  
 <br>  
