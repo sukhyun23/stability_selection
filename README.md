@@ -1,10 +1,3 @@
----
-title: "README"
-author: "sukhyun"
-date: '2020 4 4 '
-output: html_document
----
-
 
 
 
