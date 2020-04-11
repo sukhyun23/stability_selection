@@ -93,3 +93,7 @@ summary(true_model)
 <br>  
 
 ![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png)
+<br>  
+
+### Reference  
+##### paper : https://arxiv.org/abs/0809.2932  
